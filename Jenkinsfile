@@ -24,4 +24,16 @@ pipeline {
             }
         }
     }
+
+    post { 
+        always { 
+            echo 'I will always say Hello again!'
+        }
+        failure {
+            echo 'Fail so hard'
+        }
+        success {
+            echo 'It was a raging success!'
+        }
+    }
 }
