@@ -13,7 +13,9 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh './test.sh'
+                nodejs('Node latest') {
+                  sh './test.sh'
+                }
             }
         }
         stage('Deploy') {
