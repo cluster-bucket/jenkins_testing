@@ -81,14 +81,14 @@ done
 
 # Main logic
 cd project
-npm run test
+# npm run test
 
-# npm run test-hello
+npm run test-hello
 # RETVAL=$?
 # [ $RETVAL -eq 0 ] && echo Success
 # [ $RETVAL -ne 0 ] && error_exit "test-hello failed"
 
-# npm run test-goodbye
+npm run test-goodbye
 # RETVAL=$?
 # [ $RETVAL -eq 0 ] && echo Success
 # [ $RETVAL -ne 0 ] && echo error_exit "test-goodbye failed"
